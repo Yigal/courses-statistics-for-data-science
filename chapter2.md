@@ -3,6 +3,19 @@ title: 'Field types'
 description: 'The four field types: nominal, ordinal, interval, and ratio'
 ---
 
+## Field Types
+
+```yaml
+type: VideoExercise
+key: adf2a3595a
+xp: 50
+```
+
+`@projector_key`
+d28ee303f511910a2f80257e5c526a51
+
+---
+
 ## Classify field type #1
 
 ```yaml
