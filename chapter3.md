@@ -27,7 +27,7 @@ dataTable = {
   "data": [
     {
       "Name": "George VI",
-      "Position: "Monarch",
+      "Position": "Monarch",
       "Country": "UK",
       "From": "1936-12-11",
       "DaysInOffice": 5535
