@@ -13,7 +13,7 @@ xp: 50
 
 The [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook) contains information about the countries of the world. Identify for various fields about countries which type of field they are (nominal, ordinal, interval, or ratio)
   
-What is the field type for the name of the currency?
+What is the field type for the **name of the currency**?
 
 `@hint`
 * Names are nominal, because they are discrete values that don't have any inherent relationship
