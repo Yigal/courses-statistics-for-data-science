@@ -269,16 +269,16 @@ Classify the field types of these variables
 
 `@sct`
 ```{python}
-checks: # Individual checks and custom messages per item. This is optional. Without it, it will check that the options are as in the solution code.
-  - condition: check_target(pandas) == dropzone_python # Check that pandas is in dropzone_python.
-    incorrectMessage: 'Hmm! Pandas is a Python package.' # If that condition is not true, show this message.
-  - condition: check_target(numpy) == dropzone_python
-    incorrectMessage: 'Damn, this is far from perfect!'
-  - condition: check_target(dplyr) == dropzone_r
-    incorrectMessage: "Hmm, keep doing R courses! :-)"
-  - condition: check_target(stringr) == dropzone_r
-    incorrectMessage: "How funny if stringr would be a Python package."
-successMessage: "Congratulations" # Message shown when all is correct.
-failureMessage: "Try again!" # Message shown when there are errors (and there is no specific error available).
-isOrdered: false # Should the items in the zones be ordered as in the solution code?
+# checks: # Individual checks and custom messages per item. This is optional. Without it, it will check that the options are as in the solution code.
+#  - condition: check_target(pandas) == dropzone_python # Check that pandas is in dropzone_python.
+#    incorrectMessage: 'Hmm! Pandas is a Python package.' # If that condition is not true, show this message.
+#  - condition: check_target(numpy) == dropzone_python
+#    incorrectMessage: 'Damn, this is far from perfect!'
+#  - condition: check_target(dplyr) == dropzone_r
+#    incorrectMessage: "Hmm, keep doing R courses! :-)"
+#  - condition: check_target(stringr) == dropzone_r
+#    incorrectMessage: "How funny if stringr would be a Python package."
+# successMessage: "Congratulations" # Message shown when all is correct.
+# failureMessage: "Try again!" # Message shown when there are errors (and there is no specific error available).
+# isOrdered: false # Should the items in the zones be ordered as in the solution code?
 ```
