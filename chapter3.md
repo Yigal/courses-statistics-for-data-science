@@ -16,6 +16,8 @@ xp: 100
 `@instructions`
 You are given a table of historical characters and the type of each field. For each field, write Python code to produce the central tendency and variability.
 
+The table and key are both in a variable called `dataTable`.
+
 `@hint`
 <!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
 - This is an example hint.
@@ -43,7 +45,7 @@ dataTable = {
       "Type": "Ratio",
       "Unit": "Days"
     }
-  }
+  },
   "data": [
     {
       "Name": "George VI",
