@@ -274,6 +274,6 @@ checks: # Individual checks and custom messages per item.
     correctMessage: "+++"
   - failureMessage: "Try again!" # Message shown when there are errors (and there is no specific error available).
     incorrectMessage: "---"  
-  isOrdered: false # Should the items in the zones be ordered as in the solution code?
+
   
 ```
