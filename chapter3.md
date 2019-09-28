@@ -3,7 +3,7 @@ title: 'Single Variable Statistics '
 description: 'Central tendency and dispersion'
 ---
 
-## Insert exercise title here
+## Calculate the central tendency and dispersion
 
 ```yaml
 type: NormalExercise
