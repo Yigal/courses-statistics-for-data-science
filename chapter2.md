@@ -130,7 +130,7 @@ xp: 50
 If you have an interval type field (for example temperature), what is the field type of the difference between consecutive values?
 
 `@hint`
-
+Does change have a meaningful zero (no change)?
 
 `@possible_answers`
 - Nominal
