@@ -220,9 +220,7 @@ Field values can be strings, integers, dates, and so on. The possible values and
 <p></p>
 
 `@instructions`
-<!-- Guidelines for instructions https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
-- Instruction 1
-- Instruction 2
+Classify the field types of these variables
 
 `@hint`
 <!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
@@ -239,27 +237,29 @@ Field values can be strings, integers, dates, and so on. The possible values and
 
 # Drag zone that holds all the options.
 # Specify an ID for this zone to use in SCTs.
-- id: options
-  title: "Options" # Title of your zone This is not shown with more than 2 zones.
+# - id: options
+#  title: "Options" # Title of your zone This is not shown with more than 2 zones.
 
 # You can keep adding drop zones to sort to.
 # This example has 2 zones.
-- id: dropzone_r
-  title: "R"
-  items: # Each drop zone has a list of items it contains. These will be shown in a random fashion.
-    - content: "stringr" # Name of an item. Feel free to use markdown.
-      id: stringr # ID of the item. This can be used in the SCTs.
-    - content: "dplyr"
-      id: dplyr
-
-- id: dropzone_python
-  title: "Python"
+- id: nominal
   items:
-    - content: "pandas"
-      id: pandas
-    - content: "numpy"
-      id: numpy
+    - content: "Name of country"
+      id: name
+    
+- id: ordinal
+    - content: "Military rank"
+      id: rank
+
+- id: interval
+    - content: "Person's date of birth"
+      id: date
       
+- id: ratio
+    - content: "Distance is kilometers"
+      id: dist_km
+
+
 ```
 
 `@sct`
