@@ -269,11 +269,11 @@ Classify the field types of these variables
 
 `@sct`
 ```{python}
-checks: # Individual checks and custom messages per item. This is optional. Without it, it will check that the options are as in the solution code.
-  successMessage: "Congratulations" # Message shown when all is correct.
-  failureMessage: "Try again!" # Message shown when there are errors (and there is no specific error available).
+checks: # Individual checks and custom messages per item. 
+  - successMessage: "Congratulations" # Message shown when all is correct.
+    correctMessage: "+++"
+  - failureMessage: "Try again!" # Message shown when there are errors (and there is no specific error available).
+    incorrectMessage: "---"  
   isOrdered: false # Should the items in the zones be ordered as in the solution code?
-  - condition: check_target(dist_km) == ratio
-    incorrectMessage: "Can a distance be twice as much as another distance?"
   
 ```
