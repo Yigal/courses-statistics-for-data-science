@@ -24,6 +24,26 @@ You are given a table of historical characters and the type of each field. For e
 `@pre_exercise_code`
 ```{python}
 dataTable = {
+  "key": {
+    "Name": {
+      "Type": "Nominal"
+    },
+    "Position": {
+      "Type": "Ordinal",
+      "Order": ["Monarch", "Prime Minister", "Minister of Defence"]
+    },
+    "Country": {
+      "Type": "Nominal"
+    },    
+    "From": {
+      "Type": "Date",
+      "Format": "YYYY-MM-DD"
+    },
+    "DaysInOffice": {
+      "Type": "Ratio",
+      "Unit": "Days"
+    }
+  }
   "data": [
     {
       "Name": "George VI",
