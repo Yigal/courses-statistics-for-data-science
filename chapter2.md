@@ -115,3 +115,27 @@ What is the field type for the **date of last election**?
 - Ratio
 
 `@feedback`
+
+
+---
+
+## Interval differences
+
+```yaml
+type: PureMultipleChoiceExercise
+key: f5ccf87214
+xp: 50
+```
+
+If you have an interval type field (for example temperature), what is the field type of the difference between consecutive values?
+
+`@hint`
+
+
+`@possible_answers`
+- Nominal
+- Ordinal
+- Interval
+- [Ratio]
+
+`@feedback`
