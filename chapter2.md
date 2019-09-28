@@ -248,14 +248,17 @@ Classify the field types of these variables
       id: name
     
 - id: ordinal
+  items:
     - content: "Military rank"
       id: rank
 
 - id: interval
+  items:
     - content: "Person's date of birth"
       id: date
       
 - id: ratio
+  items:
     - content: "Distance is kilometers"
       id: dist_km
 
