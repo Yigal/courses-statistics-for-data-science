@@ -270,10 +270,8 @@ Classify the field types of these variables
 `@sct`
 ```{python}
 checks: # Individual checks and custom messages per item. 
-  - successMessage: "Congratulations" # Message shown when all is correct.
-    correctMessage: "+++"
-  - failureMessage: "Try again!" # Message shown when there are errors (and there is no specific error available).
-    incorrectMessage: "---"  
+  successMessage: "Congratulations" # Message shown when all is correct.
+  failureMessage: "Try again!" # Message shown when there are errors (and there is no specific error available).
 
   
 ```
