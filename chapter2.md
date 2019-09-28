@@ -240,24 +240,26 @@ Classify the field types of these variables
 # - id: options
 #  title: "Options" # Title of your zone This is not shown with more than 2 zones.
 
-# You can keep adding drop zones to sort to.
-# This example has 2 zones.
 - id: nominal
+  title: "Nominal"
   items:
     - content: "Name of country"
       id: name
     
 - id: ordinal
+  title: "Ordinal"
   items:
     - content: "Military rank"
       id: rank
 
 - id: interval
+  title: "Interval"
   items:
     - content: "Person's date of birth"
       id: date
       
 - id: ratio
+  title: "Ratio"
   items:
     - content: "Distance is kilometers"
       id: dist_km
