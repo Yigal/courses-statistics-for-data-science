@@ -1,0 +1,279 @@
+---
+title: 'Field types'
+description: 'The four field types: nominal, ordinal, interval, and ratio'
+---
+
+## Field Types
+
+```yaml
+type: DragAndDropExercise
+key: 38ed0bc092
+xp: 100
+```
+
+he easiest type of data to handle is<b style="font-style: italic;"> structured data</b></span></span>, data that is provided as entries with fields and values, similar to a table in an SQL database. For example, here's a table of historical characters with some information about them:
+
+<table border="1">
+    <caption>Historical Characters</caption>
+    <thead>
+        <tr>
+            <th scope="col" style="text-align: center;">Name</th>
+            <th scope="col" style="text-align: center;">Position</th>
+            <th scope="col" style="text-align: center;">Country</th>
+            <th scope="col" style="text-align: center;">From</th>
+            <th scope="col" style="text-align: center;">Until</th>
+            <th scope="col" style="text-align: center;">Days in office</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td style="text-align: center;">George VI</td>
+            <td style="text-align: center;">Monarch</td>
+            <td style="text-align: center;">UK</td>
+            <td style="text-align: center;">11 December 1936</td>
+            <td style="text-align: center;">6 February 1952</td>
+            <td style="text-align: center;">5535</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">Edward VII</td>
+            <td style="text-align: center;">Monarch</td>
+            <td style="text-align: center;">UK</td>
+            <td style="text-align: center;">20 January 1936</td>
+            <td style="text-align: center;">11 December 1936</td>
+            <td style="text-align: center;">326</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">George V</td>
+            <td style="text-align: center;">Monarch</td>
+            <td style="text-align: center;">UK</td>
+            <td style="text-align: center;">6 May 1910</td>
+            <td style="text-align: center;">20 January 1936</td>
+            <td style="text-align: center;">9390</td>
+        </tr>
+
+
+        <tr>
+            <td style="text-align: center;">Winston Churchill</td>
+            <td style="text-align: center;">Prime Minister</td>
+            <td style="text-align: center;">UK</td>
+            <td style="text-align: center;">10 May 1940</td>
+            <td style="text-align: center;">26 July 1945</td>
+            <td style="text-align: center;">1903</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">Winston Churchill</td>
+            <td style="text-align: center;">Prime Minister</td>
+            <td style="text-align: center;">UK</td>
+            <td style="text-align: center;">26 October 1951</td>
+            <td style="text-align: center;">5 April 1955</td>
+            <td style="text-align: center;">1257</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">Neville Chamberlain</td>
+            <td style="text-align: center;">Prime Minister</td>
+            <td style="text-align: center;">UK</td>
+            <td style="text-align: center;">28 May 1937</td>
+            <td style="text-align: center;">10 May 1940</td>
+            <td style="text-align: center;">1078</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">Clement Attlee</td>
+            <td style="text-align: center;">Prime Minister</td>
+            <td style="text-align: center;">UK</td>
+            <td style="text-align: center;">26 July 1945</td>
+            <td style="text-align: center;">26 October 1951</td>
+            <td style="text-align: center;">2283</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">David Ben-Gurion</td>
+            <td style="text-align: center;">Prime Minister</td>
+            <td style="text-align: center;">Israel</td>
+            <td style="text-align: center;">17 May 1948</td>
+            <td style="text-align: center;">26 January 1954</td>
+            <td style="text-align: center;">2080</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">David Ben-Gurion</td>
+            <td style="text-align: center;">Prime Minister</td>
+            <td style="text-align: center;">Israel</td>
+            <td style="text-align: center;">3 November 1955</td>
+            <td style="text-align: center;">26 June 1963</td>
+            <td style="text-align: center;">2792</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">Moshe Sharet</td>
+            <td style="text-align: center;">Prime Minister</td>
+            <td style="text-align: center;">Israel</td>
+            <td style="text-align: center;">26 January 1954</td>
+            <td style="text-align: center;">3 November 1955</td>
+            <td style="text-align: center;">646</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">Ernle Chatfield</td>
+            <td style="text-align: center;">Minister of Defense</td>
+            <td style="text-align: center;">UK</td>
+            <td style="text-align: center;">29 January 1939</td>
+            <td style="text-align: center;">10 May 1940</td>
+            <td style="text-align: center;">467</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">Winston Churchill</td>
+            <td style="text-align: center;">Minister of Defense</td>
+            <td style="text-align: center;">UK</td>
+            <td style="text-align: center;">10 May 1940</td>
+            <td style="text-align: center;">26 July 1945</td>
+            <td style="text-align: center;">1903</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">Winston Churchill</td>
+            <td style="text-align: center;">Minister of Defense</td>
+            <td style="text-align: center;">UK</td>
+            <td style="text-align: center;">26 October 1951</td>
+            <td style="text-align: center;">1 March 1952</td>
+            <td style="text-align: center;">127</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">Manny Shinwell</td>
+            <td style="text-align: center;">Minister of Defense</td>
+            <td style="text-align: center;">UK</td>
+            <td style="text-align: center;">28 February 1950</td>
+            <td style="text-align: center;">26 October 1951</td>
+            <td style="text-align: center;">605</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">Albert Victor Alexander</td>
+            <td style="text-align: center;">Minister of Defense</td>
+            <td style="text-align: center;">UK</td>
+            <td style="text-align: center;">20 December 1946</td>
+            <td style="text-align: center;">28 February 1950</td>
+            <td style="text-align: center;">1166</td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">Clement Attlee</td>
+            <td style="text-align: center;">Minister of Defense</td>
+            <td style="text-align: center;">UK</td>
+            <td style="text-align: center;">26 July 1945</td>
+            <td style="text-align: center;">20 December 1946</td>
+            <td style="text-align: center;">512</td>
+        </tr>
+
+    </tbody>
+</table>
+
+Field values can be strings, integers, dates, and so on. The possible values and how we can manipulate them fall into four categories:<br><br>
+<ol>
+    <li><span><i style="font-weight: bold;">Nominal </i>(also known as</span><span> <i style="font-weight: bold;">Categorical</i>)</span>. Those are values that don't have any inherent relationship to each other, for example "UK" and "Israel" or "Clement
+        Attlee" and "David Ben-Gurion".&nbsp;</li>
+    <li><b><i>Ordinal</i></b>. Those are values that can be put in order, but where addition and subtraction are meaningless. For example, a monarch is above a prime minister (at least in theory), and a prime minister is above a minister of defense. But there
+        is no meaningful way in which you could say that a prime minister is the average of a monarch and a minister of defense, for example.</li>
+    <li><i><b>Interval</b></i>. These are values that can be added, but not divided by each other, because there is no meaningful zero. Dates, for example, are interval values. We can say that if we subtract July 26th, 1945 from December 20th, 1946 we get
+        that Attlee was the UK's minister of defense for 512 days. But there's no meaningful interpretation to \( \frac{\textrm{July 26th, 1945}}{\textrm{December 20th, 1946}} \).</li>
+    <li><span><i><b>Ratio</b></i></span>. Ratio values have a meaningful zero and therefore can be divided. For example, the number of days in office is a ratio value. George VI was king for \( \frac{5535}{9390} \approx 59\% \) as long as George V.</li>
+</ol>
+<p>One way to identify interval vs. ratio fields is to change units. If the changed units don't affect the ratio between two values, it is ratio. Otherwise, it is interval.</p>
+<p>For example, lets look at time in office. If we divide the number of days for George VI by the number of days for George V, we get \( \frac{5535}{9390} \approx 59\% \). If we do the same for the number of years, we get approximately \( \frac{15.16}{25.73}
+    \), which is the same value.</p>
+<p>On the other hand, if we look at temperatures, the ratios of two temperatures are different when using different units. For example:</p>
+<table border="1">
+    <caption>Temperature</caption>
+    <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">ºC</th>
+            <th scope="col">ºF</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Austin, TX</th>
+            <td>26.1</td>
+            <td>79</td>
+        </tr>
+        <tr>
+            <th scope="row">Cairo</th>
+            <td>36.1</td>
+            <td>97</td>
+        </tr>
+    </tbody>
+</table><br>
+<p></p>
+<p>The ratio is either &nbsp;<span>\( \frac{26.1 ºC}{36.1 ºC}\approx 0.722 \) or \( \frac{79 ºF}{97 ºF} \approx 0.814 \)&nbsp;</span>. This tells us that the ratio is meaningless.</p>
+<h4>Discrete vs. Continuous</h4>
+<p>The value of a field can be <b><i>discrete</i></b> (it can be one of several values is a list) or <span><i style="font-weight: bold;">conti</i><span style="font-weight: bold;"><i>nuou</i></span><i style="font-weight: bold;">s </i>(it can be any value
+    in a certain range).</span>
+</p>
+<p></p>
+
+`@instructions`
+<!-- Guidelines for instructions https://instructor-support.datacamp.com/en/articles/2375526-course-coding-exercises. -->
+- Instruction 1
+- Instruction 2
+
+`@hint`
+<!-- Examples of good hints: https://instructor-support.datacamp.com/en/articles/2379164-hints-best-practices. -->
+- This is an example hint.
+- This is an example hint.
+
+`@solution`
+```{python}
+# Edit or remove this code to create your own exercise.
+# This is 1 type of drag and drop exercise, there are 2 other types. See documentation:
+# http://instructor-support.datacamp.com/en/articles/3039539-course-drag-drop-exercises
+
+# Make sure you only use SPACES, NOT TABS in front of each line.
+
+# Drag zone that holds all the options.
+# Specify an ID for this zone to use in SCTs.
+- id: options
+  title: "Options" # Title of your zone This is not shown with more than 2 zones.
+
+# You can keep adding drop zones to sort to.
+# This example has 2 zones.
+- id: dropzone_r
+  title: "R"
+  items: # Each drop zone has a list of items it contains. These will be shown in a random fashion.
+    - content: "stringr" # Name of an item. Feel free to use markdown.
+      id: stringr # ID of the item. This can be used in the SCTs.
+    - content: "dplyr"
+      id: dplyr
+
+- id: dropzone_python
+  title: "Python"
+  items:
+    - content: "pandas"
+      id: pandas
+    - content: "numpy"
+      id: numpy
+      
+```
+
+`@sct`
+```{python}
+checks: # Individual checks and custom messages per item. This is optional. Without it, it will check that the options are as in the solution code.
+  - condition: check_target(pandas) == dropzone_python # Check that pandas is in dropzone_python.
+    incorrectMessage: 'Hmm! Pandas is a Python package.' # If that condition is not true, show this message.
+  - condition: check_target(numpy) == dropzone_python
+    incorrectMessage: 'Damn, this is far from perfect!'
+  - condition: check_target(dplyr) == dropzone_r
+    incorrectMessage: "Hmm, keep doing R courses! :-)"
+  - condition: check_target(stringr) == dropzone_r
+    incorrectMessage: "How funny if stringr would be a Python package."
+successMessage: "Congratulations" # Message shown when all is correct.
+failureMessage: "Try again!" # Message shown when there are errors (and there is no specific error available).
+isOrdered: false # Should the items in the zones be ordered as in the solution code?
+```
